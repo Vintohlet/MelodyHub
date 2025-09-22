@@ -16,6 +16,6 @@ There will be tools and instructions that used in project
 ## How to run main.py
 1.Install dependencies `pip install psycopg2-binary pandas`
 
-2.write your database credentails in conn_params(dbname,user,password)
+2.write your database credentails in conn_params(dbname,user,password) and add .sql file name
 
 3.Run `python main.py`
