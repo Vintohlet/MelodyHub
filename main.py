@@ -4,51 +4,27 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-
 conn_params = {
     "host": "",       
-    "port": 5432,
+    "port": "",
     "dbname": "",       
-    "user": "",        
+    "user": "postgres",        
     "password": "" 
 }
 
+# File for SQL Queries
+SQL_FILE = "" 
 
-queries = {
-    "top_customers": """
-        SELECT c.customer_id, c.first_name || ' ' || c.last_name AS full_name,
-               ROUND(SUM(i.total), 2) AS revenue
-        FROM customer c
-        JOIN invoice i ON c.customer_id = i.customer_id
-        GROUP BY c.customer_id, full_name
-        ORDER BY revenue DESC
-        LIMIT 5;
-    """,
 
-    "revenue_by_year": """
-        SELECT EXTRACT(YEAR FROM i.invoice_date) AS year,
-               ROUND(SUM(i.total), 2) AS revenue
-        FROM invoice i
-        GROUP BY year
-        ORDER BY year;
-    """,
+def load_queries_from_file(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        sql_content = f.read()
 
-    "avg_invoice_total": """
-        SELECT ROUND(AVG(total), 2) AS avg_invoice,
-               MIN(total) AS min_invoice,
-               MAX(total) AS max_invoice
-        FROM invoice;
-    """,
+    queries = [q.strip() for q in sql_content.split(";") if q.strip()]
+    return {f"query_{i+1}": q for i, q in enumerate(queries)}
 
-    "tracks_per_album": """
-        SELECT a.title AS album, COUNT(t.track_id) AS track_count
-        FROM album a
-        JOIN track t ON a.album_id = t.album_id
-        GROUP BY a.title
-        ORDER BY track_count DESC
-        LIMIT 5;
-    """
-}
+
+queries = load_queries_from_file(SQL_FILE)
 
 def run_queries():
     conn = psycopg2.connect(**conn_params)
