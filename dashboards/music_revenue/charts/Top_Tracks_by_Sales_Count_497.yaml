@@ -1,0 +1,70 @@
+slice_name: Top Tracks by Sales Count
+description: null
+certified_by: null
+certification_details: null
+viz_type: word_cloud
+params:
+  datasource: 71__table
+  viz_type: word_cloud
+  slice_id: 497
+  matrixify_show_column_headers: true
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 4
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_row_height: 300
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  series: track_name
+  metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      changed_on: '2025-10-06T17:13:13.050372'
+      column_name: track_sales_count
+      created_on: '2025-10-06T17:13:13.050371'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 1700
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: column
+      type_generic: 0
+      uuid: df40c470-da55-4939-a1ea-a4028fbb6faa
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(track_sales_count)
+    optionName: metric_egqi4do14ln_5haxuvhz6a
+    sqlExpression: null
+  adhoc_filters: []
+  row_limit: 10
+  sort_by_metric: true
+  size_from: 2
+  size_to: 50
+  rotation: flat
+  color_scheme: blueToGreen
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":71,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["track_name"],"metrics":[{"aggregate":"SUM","column":{"advanced_data_type":null,"changed_on":"2025-10-06T17:13:13.050372","column_name":"track_sales_count","created_on":"2025-10-06T17:13:13.050371","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":1700,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"df40c470-da55-4939-a1ea-a4028fbb6faa","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(track_sales_count)","optionName":"metric_egqi4do14ln_5haxuvhz6a","sqlExpression":null}],"orderby":[[{"aggregate":"SUM","column":{"advanced_data_type":null,"changed_on":"2025-10-06T17:13:13.050372","column_name":"track_sales_count","created_on":"2025-10-06T17:13:13.050371","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":1700,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"df40c470-da55-4939-a1ea-a4028fbb6faa","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(track_sales_count)","optionName":"metric_egqi4do14ln_5haxuvhz6a","sqlExpression":null},false]],"annotation_layers":[],"row_limit":10,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"71__table","viz_type":"word_cloud","slice_id":497,"matrixify_show_column_headers":true,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":4,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_row_height":300,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","series":"track_name","metric":{"aggregate":"SUM","column":{"advanced_data_type":null,"changed_on":"2025-10-06T17:13:13.050372","column_name":"track_sales_count","created_on":"2025-10-06T17:13:13.050371","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":1700,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"df40c470-da55-4939-a1ea-a4028fbb6faa","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(track_sales_count)","optionName":"metric_egqi4do14ln_5haxuvhz6a","sqlExpression":null},"adhoc_filters":[],"row_limit":10,"sort_by_metric":true,"size_from":2,"size_to":50,"rotation":"flat","color_scheme":"blueToGreen","extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 27064d1f-a6d3-401d-bd39-411fbddcc4d2
+version: 1.0.0
+dataset_uuid: 15b1608b-01bb-4c83-ba26-c9ad93605cf8

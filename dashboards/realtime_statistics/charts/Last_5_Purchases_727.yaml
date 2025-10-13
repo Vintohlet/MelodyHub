@@ -1,0 +1,74 @@
+slice_name: Last 5 Purchases
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 72__table
+  viz_type: table
+  slice_id: 727
+  matrixify_show_column_headers: true
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 3
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_row_height: 300
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  query_mode: raw
+  groupby: []
+  temporal_columns_lookup:
+    invoice_date: true
+  metrics: []
+  all_columns:
+  - invoice_id
+  - customer_name
+  - billing_country
+  - genre_name
+  - track_name
+  - total_spent
+  - invoice_date
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: invoice_date
+  order_by_cols: []
+  row_limit: 1000
+  table_timestamp_format: smart_date
+  page_length: 0
+  include_search: false
+  allow_rearrange_columns: false
+  allow_render_html: true
+  column_config:
+    invoice_date:
+      d3TimeFormat: '%d-%m-%Y %H:%M:%S'
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  conditional_formatting: []
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 40
+query_context: '{"datasource":{"id":72,"type":"table"},"force":false,"queries":[{"filters":[{"col":"invoice_date","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["invoice_id","customer_name","billing_country","genre_name","track_name","total_spent","invoice_date"],"orderby":[],"annotation_layers":[],"row_limit":1000,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"72__table","viz_type":"table","slice_id":727,"matrixify_show_column_headers":true,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":3,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_row_height":300,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","query_mode":"raw","groupby":[],"temporal_columns_lookup":{"invoice_date":true},"metrics":[],"all_columns":["invoice_id","customer_name","billing_country","genre_name","track_name","total_spent","invoice_date"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"invoice_date"}],"order_by_cols":[],"row_limit":1000,"table_timestamp_format":"smart_date","page_length":0,"include_search":false,"allow_rearrange_columns":false,"allow_render_html":true,"column_config":{"invoice_date":{"d3TimeFormat":"%d-%m-%Y
+  %H:%M:%S"}},"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","conditional_formatting":[],"comparison_type":"values","extra_form_data":{},"dashboards":[40],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 4f4904cb-d5c4-4e6b-9afb-04a65fd8777a
+version: 1.0.0
+dataset_uuid: 558ca977-c8c1-475c-abcf-44c68fceb594

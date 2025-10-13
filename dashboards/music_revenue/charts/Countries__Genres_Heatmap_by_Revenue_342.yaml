@@ -1,0 +1,91 @@
+slice_name: Countries & Genres Heatmap by Revenue
+description: null
+certified_by: null
+certification_details: null
+viz_type: heatmap_v2
+params:
+  datasource: 71__table
+  viz_type: heatmap_v2
+  slice_id: 342
+  matrixify_show_column_headers: true
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 4
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_row_height: 300
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  x_axis: billing_country
+  groupby: genre_name
+  metric:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2025-10-06T17:13:13.050179'
+      column_name: invoice_id
+      created_on: '2025-10-06T17:13:13.050178'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 1690
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: column
+      type_generic: 0
+      uuid: 39c10c47-d75f-45c2-84e0-7f6fd3555a42
+      verbose_name: null
+    aggregate: COUNT
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: COUNT(invoice_id)
+    optionName: metric_0qcfsoharvyi_lbeeuuaw45l
+  adhoc_filters: []
+  row_limit: 10000
+  sort_x_axis: value_desc
+  sort_y_axis: value_desc
+  normalize_across: heatmap
+  legend_type: piecewise
+  linear_color_scheme: superset_seq_1
+  border_color:
+    a: 1
+    b: 0
+    g: 0
+    r: 0
+  border_width: 0.3
+  xscale_interval: 1
+  yscale_interval: 1
+  left_margin: auto
+  bottom_margin: '5'
+  value_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 45
+  show_legend: true
+  show_percentage: true
+  show_values: false
+  normalized: false
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":71,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"billing_country","label":"billing_country","expressionType":"SQL"},"genre_name"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-10-06T17:13:13.050179","column_name":"invoice_id","created_on":"2025-10-06T17:13:13.050178","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":1690,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"39c10c47-d75f-45c2-84e0-7f6fd3555a42","verbose_name":null},"aggregate":"COUNT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(invoice_id)","optionName":"metric_0qcfsoharvyi_lbeeuuaw45l"}],"orderby":[["COUNT(invoice_id)",false],["COUNT(invoice_id)",false]],"annotation_layers":[],"row_limit":10000,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"rank","options":{"metric":"COUNT(invoice_id)"}}]}],"form_data":{"datasource":"71__table","viz_type":"heatmap_v2","slice_id":342,"matrixify_show_column_headers":true,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":4,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_row_height":300,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","x_axis":"billing_country","groupby":"genre_name","metric":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-10-06T17:13:13.050179","column_name":"invoice_id","created_on":"2025-10-06T17:13:13.050178","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":1690,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"39c10c47-d75f-45c2-84e0-7f6fd3555a42","verbose_name":null},"aggregate":"COUNT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(invoice_id)","optionName":"metric_0qcfsoharvyi_lbeeuuaw45l"},"adhoc_filters":[],"row_limit":10000,"sort_x_axis":"value_desc","sort_y_axis":"value_desc","normalize_across":"heatmap","legend_type":"piecewise","linear_color_scheme":"superset_seq_1","border_color":{"a":1,"b":0,"g":0,"r":0},"border_width":0.3,"xscale_interval":1,"yscale_interval":1,"left_margin":"auto","bottom_margin":"5","value_bounds":[null,null],"y_axis_format":"SMART_NUMBER","x_axis_time_format":"smart_date","xAxisLabelRotation":45,"show_legend":true,"show_percentage":true,"show_values":false,"normalized":false,"extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 742dd590-880b-4d1d-8ccd-fb4ab22b348b
+version: 1.0.0
+dataset_uuid: 15b1608b-01bb-4c83-ba26-c9ad93605cf8

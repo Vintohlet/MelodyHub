@@ -1,0 +1,108 @@
+slice_name: Purchase Count by Countries
+description: null
+certified_by: null
+certification_details: null
+viz_type: deck_scatter
+params:
+  datasource: 69__table
+  viz_type: deck_scatter
+  slice_id: 341
+  matrixify_show_column_headers: true
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 4
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_row_height: 300
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  spatial:
+    type: latlong
+    latCol: latitude
+    lonCol: longitude
+  row_limit: 10000
+  filter_nulls: true
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: invoice_date
+  mapbox_style: tile://https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png
+  autozoom: true
+  viewport:
+    bearing: 0
+    latitude: 31.222656842808707
+    longitude: 6.85236157047845
+    pitch: 0
+    zoom: 1
+  point_radius_fixed:
+    type: metric
+    value:
+      aggregate: SUM
+      column:
+        advanced_data_type: null
+        certification_details: null
+        certified_by: null
+        column_name: invoice_count
+        description: null
+        expression: null
+        filterable: true
+        groupby: true
+        id: 1587
+        is_certified: false
+        is_dttm: false
+        python_date_format: null
+        type: LONGINTEGER
+        type_generic: 0
+        uuid: d8629672-34eb-470e-b57b-889ff740e161
+        verbose_name: null
+        warning_markdown: null
+      datasourceWarning: false
+      expressionType: SIMPLE
+      hasCustomLabel: false
+      label: SUM(invoice_count)
+      optionName: metric_qawroupfj6l_iq5n9gg4hk
+      sqlExpression: null
+  point_unit: square_m
+  min_radius: 5
+  max_radius: 250
+  multiplier: 1
+  legend_position: tl
+  legend_format: ',.1%'
+  color_scheme_type: categorical_palette
+  color_picker:
+    r: 0
+    g: 122
+    b: 135
+    a: 1
+  dimension: invoice_count
+  color_scheme: redToYellow
+  deafult_breakpoint_color:
+    r: 158
+    g: 158
+    b: 158
+    a: 1
+  js_columns: []
+  time_grain_sqla: null
+  granularity: null
+  extra_form_data: {}
+  dashboards:
+  - 13
+query_context: '{"datasource":{"id":69,"type":"table"},"force":false,"queries":[{"filters":[{"col":"invoice_date","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":null,"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[],"annotation_layers":[],"row_limit":10000,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"69__table","viz_type":"deck_scatter","slice_id":341,"matrixify_show_column_headers":true,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":4,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_row_height":300,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","spatial":{"type":"latlong","latCol":"latitude","lonCol":"longitude"},"row_limit":10000,"filter_nulls":true,"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"invoice_date"}],"mapbox_style":"tile://https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png","autozoom":true,"viewport":{"bearing":0,"latitude":31.222656842808707,"longitude":6.85236157047845,"pitch":0,"zoom":1},"point_radius_fixed":{"type":"metric","value":{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"invoice_count","description":null,"expression":null,"filterable":true,"groupby":true,"id":1587,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"LONGINTEGER","type_generic":0,"uuid":"d8629672-34eb-470e-b57b-889ff740e161","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(invoice_count)","optionName":"metric_qawroupfj6l_iq5n9gg4hk","sqlExpression":null}},"point_unit":"square_m","min_radius":5,"max_radius":250,"multiplier":1,"legend_position":"tl","legend_format":",.1%","color_scheme_type":"categorical_palette","color_picker":{"r":0,"g":122,"b":135,"a":1},"dimension":"invoice_count","color_scheme":"redToYellow","deafult_breakpoint_color":{"r":158,"g":158,"b":158,"a":1},"js_columns":[],"time_grain_sqla":null,"granularity":null,"extra_form_data":{},"dashboards":[13],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 89d014da-b2da-4e40-896d-38b1416744b5
+version: 1.0.0
+dataset_uuid: 87ffb2a8-483d-409b-a495-2399837e4c22

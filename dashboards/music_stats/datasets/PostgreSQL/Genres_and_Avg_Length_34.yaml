@@ -1,0 +1,58 @@
+table_name: Genres and Avg Length
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: music
+schema: public
+sql: "SELECT g.Name AS genre, ROUND(AVG(t.Milliseconds) / 60000.0, 2) AS avg_length_min\r\
+  \nFROM Track t\r\nJOIN Genre g ON t.Genre_Id = g.Genre_Id\r\nJOIN Invoice_Line il\
+  \ ON t.Track_Id = il.Track_Id\r\nGROUP BY g.Name\r\nORDER BY avg_length_min DESC;\r\
+  \n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: cdb2b98c-a164-4bce-919e-d1bba941e4c3
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: avg_length_min
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: genre
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 8ec1b426-20d1-401d-bd53-7c84f8952925

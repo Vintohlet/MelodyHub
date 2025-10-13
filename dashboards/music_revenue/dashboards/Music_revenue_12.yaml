@@ -1,0 +1,353 @@
+dashboard_title: '[ Music revenue ]'
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: d6eaeb66-e05a-42b6-baae-62f8b7414db1
+position:
+  CHART-explore-199-1:
+    children: []
+    id: CHART-explore-199-1
+    meta:
+      chartId: 199
+      height: 50
+      sliceName: Tracks Sold by Genre
+      uuid: 44fe41c9-e19e-4a1d-b5d5-e82c1fedf902
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-nTT1bnX0Fb4e10z8Q_-gf
+    type: CHART
+  CHART-explore-200-1:
+    children: []
+    id: CHART-explore-200-1
+    meta:
+      chartId: 200
+      height: 50
+      sliceName: Top Albums by Revenue
+      uuid: b108cda2-7f0e-46b4-b358-178530c69bc5
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-nTT1bnX0Fb4e10z8Q_-gf
+    type: CHART
+  CHART-explore-342-1:
+    children: []
+    id: CHART-explore-342-1
+    meta:
+      chartId: 342
+      height: 70
+      sliceName: Countries & Genres Heatmap by Revenue
+      uuid: 742dd590-880b-4d1d-8ccd-fb4ab22b348b
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-nxLqozEq2ar9OFNQwDnLW
+    type: CHART
+  CHART-explore-343-1:
+    children: []
+    id: CHART-explore-343-1
+    meta:
+      chartId: 343
+      height: 70
+      sliceName: Top  Best Seller Tracks by Albums and Artists
+      uuid: c3868960-c04f-462b-b872-5ca9a050102d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-nxLqozEq2ar9OFNQwDnLW
+    type: CHART
+  CHART-explore-344-1:
+    children: []
+    id: CHART-explore-344-1
+    meta:
+      chartId: 344
+      height: 80
+      sliceName: Top  Customers
+      uuid: a7089b5e-4538-4dc0-a4d2-cf4fc9e39b4f
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-q7tm3OPgGNX26OC342e8H
+    type: CHART
+  CHART-explore-497-1:
+    children: []
+    id: CHART-explore-497-1
+    meta:
+      chartId: 497
+      height: 50
+      sliceName: Top Tracks by Sales Count
+      uuid: 27064d1f-a6d3-401d-bd39-411fbddcc4d2
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-L25hIZHAdSzewO-3_VUbs
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-nTT1bnX0Fb4e10z8Q_-gf
+    - ROW-nxLqozEq2ar9OFNQwDnLW
+    - ROW-q7tm3OPgGNX26OC342e8H
+    - ROW-L25hIZHAdSzewO-3_VUbs
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: '[ Music revenue ]'
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-L25hIZHAdSzewO-3_VUbs:
+    children:
+    - CHART-explore-497-1
+    id: ROW-L25hIZHAdSzewO-3_VUbs
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-nTT1bnX0Fb4e10z8Q_-gf:
+    children:
+    - CHART-explore-199-1
+    - CHART-explore-200-1
+    id: ROW-nTT1bnX0Fb4e10z8Q_-gf
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-nxLqozEq2ar9OFNQwDnLW:
+    children:
+    - CHART-explore-342-1
+    - CHART-explore-343-1
+    id: ROW-nxLqozEq2ar9OFNQwDnLW
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-q7tm3OPgGNX26OC342e8H:
+    children:
+    - CHART-explore-344-1
+    id: ROW-q7tm3OPgGNX26OC342e8H
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '199':
+      id: 199
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 200
+        - 342
+        - 343
+        - 344
+        - 497
+    '200':
+      id: 200
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 199
+        - 342
+        - 343
+        - 344
+        - 497
+    '343':
+      id: 343
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 199
+        - 200
+        - 342
+        - 344
+        - 497
+    '344':
+      id: 344
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 199
+        - 200
+        - 342
+        - 343
+        - 497
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 199
+    - 200
+    - 342
+    - 343
+    - 344
+    - 497
+  color_scheme: ''
+  refresh_frequency: 30
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+  - Rock
+  - SUM(revenue)
+  - The Day I Tried To Live
+  - The House Jack Built
+  map_label_colors:
+    Rock: '#1FA8C9'
+    Latin: '#454E7C'
+    Metal: '#5AC189'
+    Alternative & Punk: '#FF7F44'
+    Jazz: '#666666'
+    Blues: '#E04355'
+    TV Shows: '#FCC700'
+    R&B/Soul: '#A868B7'
+    Classical: '#3CCCCB'
+    Reggae: '#A38F79'
+    Pop: '#8FD3E4'
+    Drama: '#A1A6BD'
+    Soundtrack: '#ACE1C4'
+    Sci Fi & Fantasy: '#FEC0A1'
+    Hip Hop/Rap: '#B2B2B2'
+    Electronica/Dance: '#EFA1AA'
+    Alternative: '#FDE380'
+    Heavy Metal: '#D3B3DA'
+    Bossa Nova: '#9EE5E5'
+    World: '#D1C6BC'
+    Easy Listening: '#454E7C'
+    Comedy: '#5AC189'
+    Science Fiction: '#FF7F44'
+    Rock And Roll: '#666666'
+    SUM(revenue): '#1FA8C9'
+    Accept: '#454E7C'
+    Restless and Wild: '#5AC189'
+    Fast As a Shark: '#FF7F44'
+    Battlestar Galactica: '#FEC0A1'
+    Battlestar Galactica, Season 3: '#B2B2B2'
+    Exodus, Pt. 2: '#666666'
+    Occupation / Precipice: '#E04355'
+    The Eye of Jupiter: '#FCC700'
+    Lost: '#E04355'
+    LOST, Season 4: '#A38F79'
+    The Economist: '#A868B7'
+    Ji Yeon: '#3CCCCB'
+    The Other Woman: '#8FD3E4'
+    Lost, Season 3: '#FCC700'
+    The Glass Ballerina: '#A868B7'
+    Lost, Season 2: '#A1A6BD'
+    The Long Con: '#ACE1C4'
+    The Other 48 Days: '#EFA1AA'
+    Heroes: '#A38F79'
+    Heroes, Season 1: '#8FD3E4'
+    Company Man: '#FDE380'
+    Battlestar Galactica (Classic): '#454E7C'
+    Battlestar Galactica (Classic), Season 1: '#5AC189'
+    Battlestar Galactica, Pt. 1: '#D3B3DA'
+    Greetings from Earth, Pt. 1: '#9EE5E5'
+    The Office: '#FEC0A1'
+    The Office, Season 3: '#B2B2B2'
+    Business School: '#D1C6BC'
+    The Office, Season 2: '#ACE1C4'
+    The Secret: '#FF7F44'
+    The Dundies: '#666666'
+    Chico Buarque: '#EFA1AA'
+    Minha Historia: '#FDE380'
+    Um Indio: '#D3B3DA'
+    Soundgarden: '#9EE5E5'
+    A-Sides: '#D1C6BC'
+    The Day I Tried To Live: '#3CCCCB'
+    Led Zeppelin: '#A1A6BD'
+    The Song Remains The Same (Disc 1): '#5AC189'
+    The Song Remains The Same: '#FF7F44'
+    Metallica: '#666666'
+    Load: '#E04355'
+    The House Jack Built: '#454E7C'
+    SUM(total_spent): '#1FA8C9'
+    High Value: '#454E7C'
+    VIP (8+ orders): '#5AC189'
+    Eduardo Martins: '#FF7F44'
+    "Niklas Schr\xF6der": '#A868B7'
+    "Franti\u0161ek Wichterlov\xE1": '#3CCCCB'
+    Mark Taylor: '#666666'
+    Edward Francis: '#E04355'
+    Julia Barnett: '#FCC700'
+    Kara Nielsen: '#A38F79'
+    "Jo\xE3o Fernandes": '#8FD3E4'
+    Robert Brown: '#666666'
+    "Stanis\u0142aw W\xF3jcik": '#A38F79'
+    Walking Into Clarksdale: '#3200A7'
+    Hallowed Be Thy Name: '#004CDA'
+    Sanctuary: '#0074F1'
+    The Number Of The Beast: '#0096EF'
+    Good Golly Miss Molly: '#53BFFF'
+    Linha Do Equador: '#41C8E6'
+    Selvagem: '#30DEDE'
+    Wrathchild: '#04D9C7'
+  color_scheme_domain: []
+  stagger_refresh: true
+  native_filter_configuration:
+  - id: NATIVE_FILTER-mv9o2QkPkl4ozf6k_t22L
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      creatable: true
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Artist
+    filterType: filter_select
+    targets:
+    - column:
+        name: artist_name
+      datasetUuid: 15b1608b-01bb-4c83-ba26-c9ad93605cf8
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 342
+    - 343
+    - 344
+    - 497
+    - 199
+    - 200
+    tabsInScope: []
+theme_uuid: null
+version: 1.0.0

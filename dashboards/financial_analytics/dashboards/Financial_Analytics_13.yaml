@@ -1,0 +1,320 @@
+dashboard_title: '[ Financial Analytics ]'
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 4773a7db-a789-40dd-b300-9e7398eaea92
+position:
+  CHART-explore-201-1:
+    children: []
+    id: CHART-explore-201-1
+    meta:
+      chartId: 201
+      height: 50
+      sliceName: Revenue by Country
+      uuid: d06ea0db-57b7-4597-acf7-5daa0e0d824f
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-OJxIQOIxARKQNO_QEJluk
+    type: CHART
+  CHART-explore-202-1:
+    children: []
+    id: CHART-explore-202-1
+    meta:
+      chartId: 202
+      height: 50
+      sliceName: Revenue Over Time by Year
+      uuid: 8832d7d3-49f2-4109-b668-067a518126d6
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-OJxIQOIxARKQNO_QEJluk
+    type: CHART
+  CHART-explore-302-1:
+    children: []
+    id: CHART-explore-302-1
+    meta:
+      chartId: 302
+      height: 50
+      sliceName: New Client's Revenue
+      uuid: b03514a8-d029-44d7-ac6f-014a48a25482
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-EDvqc1G1p_65zQNr2J2Vp
+    type: CHART
+  CHART-explore-341-1:
+    children: []
+    id: CHART-explore-341-1
+    meta:
+      chartId: 341
+      height: 50
+      sliceName: Purchase Count by Countries
+      uuid: 89d014da-b2da-4e40-896d-38b1416744b5
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-EDvqc1G1p_65zQNr2J2Vp
+    type: CHART
+  CHART-explore-726-1:
+    children: []
+    id: CHART-explore-726-1
+    meta:
+      chartId: 726
+      height: 50
+      sliceName: Normalized Revenue by Country
+      uuid: 2a409434-7b79-41d2-8195-221cb7e66144
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-iZLnDSotLjWori9rSbwPS
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-OJxIQOIxARKQNO_QEJluk
+    - ROW-EDvqc1G1p_65zQNr2J2Vp
+    - ROW-iZLnDSotLjWori9rSbwPS
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: '[ Financial Analytics ]'
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-EDvqc1G1p_65zQNr2J2Vp:
+    children:
+    - CHART-explore-202-1
+    - CHART-explore-201-1
+    id: ROW-EDvqc1G1p_65zQNr2J2Vp
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-OJxIQOIxARKQNO_QEJluk:
+    children:
+    - CHART-explore-302-1
+    - CHART-explore-341-1
+    id: ROW-OJxIQOIxARKQNO_QEJluk
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-iZLnDSotLjWori9rSbwPS:
+    children:
+    - CHART-explore-726-1
+    id: ROW-iZLnDSotLjWori9rSbwPS
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  refresh_frequency: 0
+  timed_refresh_immune_slices: []
+  expanded_slices: {}
+  color_scheme: ''
+  label_colors: {}
+  shared_label_colors:
+  - SUM(revenue)
+  map_label_colors:
+    '5': '#D60039'
+    '7': '#FFF46D'
+    '8': '#FFE601'
+    '9': '#FFCC00'
+    '10': '#FFAD00'
+    '11': '#FE8E17'
+    '12': '#F47028'
+    '13': '#E45233'
+    '14': '#D1353B'
+    '15': '#D60039'
+    '17': '#90042A'
+    SUM(revenue): '#1FA8C9'
+    percent of growth over year: '#454E7C'
+    average: '#454E7C'
+    mediana: '#5AC189'
+    AVG(normalized_revenue): '#1FA8C9'
+    Julia Barnett, USA: '#8FD3E4'
+    Alexandre Rocha, Brazil: '#FDE380'
+    "Ladislav Kov\xE1cs, Hungary": '#FCC700'
+    Ruslan Tuleuov, Kazakhstan: '#1FA8C9'
+    "Franti\u0161ek Wichterlov\xE1, Czech Republic": '#A868B7'
+    Aaron Mitchell, Canada: '#EFA1AA'
+    Steve Murray, United Kingdom: '#D1C6BC'
+    Hugh O'Reilly, Ireland: '#E04355'
+    Richard Cunningham, USA: '#FF7F44'
+    Edward Francis, Canada: '#D1C6BC'
+    "Niklas Schr\xF6der, Germany": '#EFA1AA'
+    Phil Hughes, United Kingdom: '#FDE380'
+    "Jo\xE3o Fernandes, Portugal": '#FCC700'
+    Heather Leacock, USA: '#666666'
+    Emma Jones, United Kingdom: '#454E7C'
+    "Enrique Mu\xF1oz, Spain": '#5AC189'
+    Frank Ralston, USA: '#454E7C'
+    John Gordon, USA: '#FCC700'
+    Joakim Johansson, Sweden: '#ACE1C4'
+    Mark Taylor, Australia: '#FEC0A1'
+    Kathy Chase, USA: '#3CCCCB'
+    "Lu\xEDs Gon\xE7alves, Brazil": '#A868B7'
+    Wyatt Girard, France: '#3CCCCB'
+    Kara Nielsen, Denmark: '#A868B7'
+    "Fran\xE7ois Tremblay, Canada": '#FF7F44'
+    Daan Peeters, Belgium: '#D3B3DA'
+    Lucas Mancini, Italy: '#8FD3E4'
+    Jack Smith, USA: '#E04355'
+    Dominique Lefebvre, France: '#8FD3E4'
+    Ellie Sullivan, Canada: '#D1C6BC'
+    Luis Rojas, Chile: '#666666'
+    Robert Brown, Canada: '#D3B3DA'
+    Camille Bernard, France: '#FEC0A1'
+    Eduardo Martins, Brazil: '#D3B3DA'
+    Fernanda Ramos, Brazil: '#FF7F44'
+    Mark Philips, Canada: '#ACE1C4'
+    "Stanis\u0142aw W\xF3jcik, Poland": '#9EE5E5'
+    Victor Stevens, USA: '#ACE1C4'
+    Michelle Brooks, USA: '#B2B2B2'
+    Fynn Zimmermann, Germany: '#A38F79'
+    Tim Goyer, USA: '#B2B2B2'
+    Puja Srivastava, India: '#D1C6BC'
+    "Terhi H\xE4m\xE4l\xE4inen, Finland": '#B2B2B2'
+    Martha Silk, Canada: '#3CCCCB'
+    Dan Miller, USA: '#5AC189'
+    Roberto Almeida, Brazil: '#9EE5E5'
+    Isabelle Mercier, France: '#EFA1AA'
+    Jennifer Peterson, Canada: '#A1A6BD'
+    Astrid Gruber, Austria: '#A1A6BD'
+    Johannes Van der Berg, Netherlands: '#FDE380'
+    Marc Dubois, France: '#A38F79'
+    "Leonie K\xF6hler, Germany": '#A38F79'
+    "Bj\xF8rn Hansen, Norway": '#454E7C'
+    Hannah Schneider, Germany: '#E04355'
+    Frank Harris, USA: '#666666'
+    "Diego Guti\xE9rrez, Argentina": '#9EE5E5'
+    Manoj Pareek, India: '#FEC0A1'
+    Pedri Gonzalez, Spain: '#5AC189'
+    Madalena Sampaio, Portugal: '#A1A6BD'
+    Patrick Gray, USA: '#9EE5E5'
+    Dexter Morgan, USA: '#454E7C'
+    "Helena Hol\xFD, Czech Republic": '#5AC189'
+  color_scheme_domain: []
+  cross_filters_enabled: true
+  chart_configuration:
+    '201':
+      id: 201
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 202
+        - 302
+        - 341
+        - 726
+    '202':
+      id: 202
+      crossFilters:
+        scope:
+          rootPath:
+          - ROOT_ID
+          excluded: []
+        chartsInScope:
+        - 201
+        - 202
+        - 302
+        - 341
+        - 726
+    '302':
+      id: 302
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 201
+        - 202
+        - 341
+        - 726
+    '341':
+      id: 341
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 201
+        - 202
+        - 302
+        - 726
+    '726':
+      id: 726
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 201
+        - 202
+        - 302
+        - 341
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 201
+    - 202
+    - 302
+    - 341
+    - 726
+  default_filters: '{}'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-yl22DvaQBzhPqa8pSNE-j
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      creatable: true
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Country
+    filterType: filter_select
+    targets:
+    - column:
+        name: country
+      datasetUuid: 87ffb2a8-483d-409b-a495-2399837e4c22
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 201
+    - 202
+    - 341
+    - 726
+    - 302
+    tabsInScope: []
+theme_uuid: null
+version: 1.0.0
