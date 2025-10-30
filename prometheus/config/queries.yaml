@@ -1,0 +1,64 @@
+pg_all_db_tables:
+  query: |
+    SELECT 
+      d.datname AS database_name,
+      t.schemaname,
+      t.relname AS table_name,
+      t.n_live_tup AS estimated_rows
+    FROM pg_database d
+    CROSS JOIN LATERAL (
+      SELECT *
+      FROM dblink(
+        'host=localhost port=5432 dbname=' || d.datname || ' user=postgres password=1234 connect_timeout=10',
+        'SELECT schemaname, relname, n_live_tup FROM pg_stat_user_tables'
+      ) AS t(schemaname text, relname text, n_live_tup bigint)
+    ) t
+    WHERE d.datallowconn = true
+      AND d.datname NOT IN ('template0', 'template1');
+  metrics:
+    - database_name:
+        usage: "LABEL"
+        description: "Database name"
+    - schemaname:
+        usage: "LABEL"
+        description: "Schema name"
+    - table_name:
+        usage: "LABEL"
+        description: "Table name"
+    - estimated_rows:
+        usage: "GAUGE"
+        description: "Approximate number of live tuples (rows) per table per database"
+
+pg_roles_list:
+  query: |
+    SELECT rolname AS username, 1 AS dummy_value
+    FROM pg_roles
+    WHERE rolcanlogin = true
+      AND rolname NOT LIKE 'pg_%';
+  metrics:
+    - username:
+        usage: "LABEL"
+        description: "User name"
+    - dummy_value:
+        usage: "GAUGE"
+        description: "Dummy value to make Prometheus metric work"
+
+
+pg_transactions:
+  query: |
+    SELECT 
+      datname AS database_name,
+      sum(xact_commit) AS commits,
+      sum(xact_rollback) AS rollbacks
+    FROM pg_stat_database
+    GROUP BY datname;
+  metrics:
+    - database_name:
+        usage: "LABEL"
+        description: "Database name"
+    - commits:
+        usage: "COUNTER"
+        description: "Total committed transactions"
+    - rollbacks:
+        usage: "COUNTER"
+        description: "Total rolled back transactions"
